@@ -307,7 +307,7 @@ function initFormSubmit() {
             btn.disabled = true;
             
             try {
-                const res = await fetch('http://localhost:8000/php/send.php', {
+                const res = await fetch('https://electropro-bot.awardspace.net/send.php', {
                     method: 'POST',
                     body: new FormData(e.target)
                 });
@@ -476,4 +476,5 @@ function showErrorNotification(message = 'Произошла ошибка. По�
         notice.style.animation = 'fadeOut 0.5s ease forwards';
         setTimeout(() => notice.remove(), 500);
     }, 5000);
+
 }
