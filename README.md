@@ -1,94 +1,68 @@
-Сайт-портфолио электрика 🛠️ | Electrician Portfolio Website
-🇷🇺 Русская версия | 🇬🇧 English version
-🇷🇺 О проекте
-Персональный сайт-визитка для электромонтажных работ. Сайт представляет услуги частного электрика в Новосибирске и области.
+# Школьный сайт № 218 — учебный прототип
 
-📋 Описание
-Современный адаптивный лендинг для продвижения услуг электромонтажа. Сайт включает информацию об услугах, портфолио выполненных работ, прайс-лист с актуальными ценами, калькулятор стоимости и форму обратной связи.
+Интерактивный прототип для индивидуального проекта Старунова Владимира Антоновича (11 «В»), МАОУ СОШ № 218, Новосибирск.
 
-⚡ Функционал
-Адаптивный дизайн — корректное отображение на всех устройствах (мобильные, планшеты, десктоп)
-Каталог услуг — подробное описание видов работ с иконками и описанием
-Портфолио — галерея выполненных проектов с фото, описанием и ценами
-Прайс-лист — детальная стоимость всех услуг в удобной таблице
-Калькулятор — быстрый расчет примерной стоимости работ онлайн
-Контактная информация — телефон, режим работы, зона обслуживания, карта
-Быстрая загрузка — оптимизированные изображения и минифицированный код
+Это учебная демонстрация, а не официальный ресурс школы и не источник актуального расписания, меню или списка кружков.
 
-📱 Возможности
-Для клиентов:
-🔍 Быстрый поиск нужной услуги
-💰 Прозрачное ценообразование без скрытых платежей
-🧮 Расчет стоимости онлайн за 30 секунд
-🖼️ Примеры реальных работ с фото «до/после»
-📞 Удобная связь с мастером в один клик
+## Разделы
 
-Для владельца:
-✏️ Легкое обновление данных через JSON-файлы
-🗂️ Простая структура для редактирования без сложных фреймворков
-🔎 SEO-оптимизированная структура для лучшего поиска
-🤖 При покупке смешанного хостинга — возможность подключить бота для Telegram-оповещений о новых заявках
-🛠 Технологии
+- Главная — быстрые переходы и результаты опроса 20 участников.
+- Расписание — выбор класса. Неподтверждённые уроки не отображаются.
+- Столовая — демонстрационный макет меню по дням.
+- Новости VK — концепция будущей интеграции и ссылка на оригинальное сообщество.
+- Кружки — интерфейс поиска и избранного; карточки появятся после подтверждения данных.
+- Перемена — викторина из семи вопросов.
 
-Технология
-Назначение
-HTML5
-Семантическая разметка, доступность
-CSS3
-Стилизация, анимации, медиа-запросы
-JavaScript (Vanilla)
-Интерактивность, калькулятор, валидация форм
-JSON
-Хранение данных портфолио и прайс-листа
-GitHub Pages
-Бесплатный хостинг и деплой
+## Адрес сайта
 
-🇬🇧 About the Project
-Personal business card website for electrical installation services. The site showcases private electrician services in Novosibirsk and the surrounding region.
+После включения GitHub Pages сайт будет доступен по адресу:
+https://spysisi.github.io/sait/
 
-📋 Description
-A modern, responsive landing page for promoting electrical installation services. The site includes service information, a portfolio of completed projects, an up-to-date price list, a cost calculator, and a contact form.
+При каждом обновлении ветки main опубликованная версия сайта обновится автоматически.
 
-⚡ Features
-Responsive Design — flawless display on all devices (mobile, tablet, desktop)
-Services Catalog — detailed descriptions of work types with icons and explanations
-Portfolio — gallery of completed projects with photos, descriptions, and pricing
-Price List — detailed cost breakdown of all services in a user-friendly table
-Calculator — instant approximate cost calculation online
-Contact Information — phone number, working hours, service area, map integration
-Fast Loading — optimized images and minified code for performance
+## Запуск на Windows
 
-📱 Capabilities
-For Clients:
-🔍 Quick search for required services
-💰 Transparent pricing with no hidden fees
-🧮 Online cost estimation in under 30 seconds
-🖼️ Real project examples with before/after photos
-📞 One-click contact with the electrician
+1. Скачайте репозиторий через Code → Download ZIP и распакуйте его.
+2. Установите Python 3, если он ещё не установлен.
+3. Запустите start.bat двойным щелчком.
+4. Браузер откроет http://127.0.0.1:8000/.
+5. Оставьте окно консоли открытым на время работы. Для остановки нажмите Ctrl+C.
 
-For Owner:
-✏️ Easy data updates via JSON files
-🗂️ Simple structure for editing without complex frameworks
-🔎 SEO-optimized structure for better search visibility
-🤖 With mixed hosting purchase — ability to connect a Telegram bot for instant application notifications
-🛠 Technologies
+Запуск через сервер нужен для загрузки файла data/content.json. Не открывайте index.html двойным щелчком.
 
-Technology
-Purpose
-HTML5
-Semantic markup, accessibility
-CSS3
-Styling, animations, media queries
-JavaScript (Vanilla)
-Interactivity, calculator, form validation
-JSON
-Portfolio and pricing data storage
-GitHub Pages
-Free hosting and deployment
+## Запуск вручную
 
+В терминале из папки проекта выполните:
 
-🇷🇺 Перед редактированием файлов сделайте резервную копию.
-🇬🇧 Always create a backup before editing configuration files.
+    python -m http.server 8000
 
-⭐ Если проект оказался полезным — поставьте звезду на GitHub!
-⭐ If you found this project helpful — please star it on GitHub!
+На Windows также можно использовать:
+
+    py -m http.server 8000
+
+На macOS/Linux:
+
+    ./start.sh
+
+Затем откройте http://127.0.0.1:8000/.
+
+## Публикация через GitHub Pages
+
+Для репозитория Spysisi/sait используется проектный адрес https://spysisi.github.io/sait/.
+
+1. В GitHub откройте Settings → Pages.
+2. В разделе Build and deployment выберите Deploy from a branch.
+3. Выберите ветку main и папку /(root), затем нажмите Save.
+4. После первой публикации GitHub покажет адрес сайта в этом же разделе.
+
+Если Pages уже был включён для прежнего сайта через ветку main и папку /(root), настройки менять не требуется.
+
+## Данные и ограничения
+
+- В JSON перечислены классы, но проверенного расписания нет. Для всех классов выводится честное сообщение об отсутствии подтверждённых данных.
+- Фактическое меню столовой в проект не предоставлено; раздел демонстрирует интерфейс без выдуманных блюд.
+- Список кружков требует подтверждения школы; карточки не заполнены вымышленными занятиями.
+- Новости не синхронизируются автоматически. В текущей версии нет VK API, токена или импортёра.
+- Карта школы не включена, так как не был предоставлен проверенный план кабинетов.
+
+Перед реальным внедрением необходимо согласовать данные и использование школьных материалов с администрацией.
